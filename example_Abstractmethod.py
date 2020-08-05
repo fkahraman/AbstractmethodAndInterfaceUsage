@@ -13,8 +13,6 @@ class Animal(ABC):
 
     @abstractmethod
     def call(self):
-
-        print(self.name, ' konuşuyor...')
         pass
 
 
