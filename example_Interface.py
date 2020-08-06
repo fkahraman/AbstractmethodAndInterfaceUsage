@@ -25,7 +25,7 @@ class blackPencil(DrawShapesInterface):
         else:
             message = 'ince'
 
-        print('{} siyah kalem ile {} bir üçgen çizildi.'.format(pencilType, message))
+        return "{} siyah kalem ile {} bir üçgen çizildi.".format(pencilType, message)
 
     def drawRectangle(self, pencilType: str, pencilBorder: int) -> str:
 
@@ -35,7 +35,7 @@ class blackPencil(DrawShapesInterface):
         else:
             message = 'ince'
 
-        print('{} siyah kalem ile {} bir kare çizildi.'.format(pencilType, message))
+        return "{} siyah kalem ile {} bir kare çizildi.".format(pencilType, message)
 
 
 class redkPencil(DrawShapesInterface):
@@ -48,7 +48,7 @@ class redkPencil(DrawShapesInterface):
         else:
             message = 'ince'
 
-        print('{} kırmızı kalem ile {} bir üçgen çizildi.'.format(pencilType, message))
+        return "{} kırmızı kalem ile {} bir üçgen çizildi.".format(pencilType, message)
 
     def drawRectangle(self, pencilType: str, pencilBorder: int) -> str:
 
@@ -58,7 +58,7 @@ class redkPencil(DrawShapesInterface):
         else:
             message = 'ince'
 
-        print('{} kırmızı kalem ile {} bir kare çizildi.'.format(pencilType, message))
+        return "{} kırmızı kalem ile {} bir kare çizildi.".format(pencilType, message)
 
 
 if __name__ == '__main__':
@@ -72,5 +72,5 @@ if __name__ == '__main__':
     kalem1 = redkPencil()
     kalem2 = blackPencil()
 
-    kalem1.drawTriangle(type1, border1)
-    kalem2.drawRectangle(type2, border2)
+    print(kalem1.drawTriangle(type1, border1))
+    print(kalem2.drawRectangle(type2, border2))
